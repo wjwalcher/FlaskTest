@@ -1,0 +1,19 @@
+html{
+	background-color:blue;
+	font-family: 'Slabo 27px'
+}
+
+h1{
+	text-align:center;
+	font-size: 4em;
+}
+
+div{
+	background-color:white;
+	border:4px dashed black;
+	border-radius: 10px;
+	position:center;
+	text-align: center;
+	font-size: 3em;
+	margin: 10px;
+}

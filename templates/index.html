@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<title>Random Number Generator</title>
+	</head>
+	<body>
+		<h1>Random number generator!</h1>
+		<div>
+		<p>Here is a number, between 0 and {{maxvalue}}: {{number}}</p>
+		{% if number > maxvalue/2 %}
+		<p>The generated number was greater than half of the highest number possible</p>
+		{% elif number < maxvalue/2 %}
+		<p>The generated number was less than half of the highest number possible</p>
+		{% else %}
+		<p>Wow! Your number is exactly half of the maximum range of values possible!</p>
+		{% endif %}
+		</div>
+	</body>
+</html>
